@@ -49,9 +49,9 @@ main () {
   iniciar_sdl ();
 	SDL_WM_SetCaption("Abbaye des Morts - v1.11", "Abbaye des Morts");
 #ifdef _RENDER_320_240
-  pantalla = SDL_SetVideoMode(320,240,8,SDL_HWSURFACE|SDL_DOUBLEBUF);
+  pantalla = SDL_SetVideoMode(320,240,16,SDL_HWSURFACE|SDL_DOUBLEBUF);
 #else
-  pantalla = SDL_SetVideoMode(640,480,8,SDL_HWSURFACE|SDL_DOUBLEBUF);
+  pantalla = SDL_SetVideoMode(640,480,32,SDL_HWSURFACE|SDL_DOUBLEBUF);
 #endif
 
 	/* Ocultando el raton en el área de juego */
