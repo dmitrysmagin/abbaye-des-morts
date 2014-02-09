@@ -8,8 +8,12 @@
 
 NAME	= abbaye
 
-CFLAGS	= -s -O2 `sdl-config --cflags`
+CFLAGS	= -g -O2 `sdl-config --cflags`
 LIBS 	= -lSDL_image -lSDL_ttf -lSDL_mixer -lSDL_gfx `sdl-config --libs` -lm
+
+ifdef RUTAS_RELATIVAS
+	CFLAGS	+= -D_RUTAS_RELATIVAS
+endif
 
 # assume cross-compilation
 ifeq "$(TARGET)" "gcw0"
