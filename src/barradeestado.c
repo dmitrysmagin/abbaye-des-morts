@@ -45,7 +45,7 @@ void barradeestado (SDL_Surface *ventana, SDL_Surface *tiles, int habitacion, in
   SDL_Rect desmarcador = {0,0,0,0};
   int i = 0;
 
-  char datos[1];
+  char datos[128];
   const char *nompantalla;
   int ancho = 0;
   int alto = 0;
